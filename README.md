@@ -20,8 +20,7 @@ or liabilities whatsoever, including, without limitation, any direct or indirect
 ## Background
 
 There have been lots of crypto pump-and-dump (PND) schemes on lesser-known altcoins. How they work can typically be
-concluded in a paper written by Jiahua Xu and Benjamin Livshits, The Anatomy of a Cryptocurrency Pump-and-Dump Scheme (
-DOI:10.2139/ssrn.3303365).
+concluded in a paper written by Jiahua Xu and Benjamin Livshits, [The Anatomy of a Cryptocurrency Pump-and-Dump Scheme](https://arxiv.org/abs/1811.10109) (DOI:10.2139/ssrn.3303365).
 
 > Set-up: The organizer creates a publicly accessible group or channel, and recruits as many group members or channel
 > subscribers as possible by advertising and posting invitation links on major forums such as Bitcointalk, Steemit, and
@@ -75,7 +74,7 @@ coin and quickly sells it back after the price has been increased to a predefine
 
 Create a Discord account, a Binance account with API token and find the target Discord PND channel.
 
-Change the Regex expressions which captures the altcoin ticker symbol at `discord_scraper.py`.
+Change the Regex expressions which captures the altcoin symbol at `discord_scraper.py`.
 
 Create a `.env` file with the syntax defined as `.env.sample`.
 
@@ -93,4 +92,10 @@ Execute the following command to start listening to the Discord channel.
 python3 main.py
 ```
 
-Once a altcoin ticker symbol has been detected within a new message, by the defined Regex expressions, a BUY order will be placed. Then, a SELL order will be placed at a price of configurable amount of percentage above the current price (ideally +100%, by default +20%).
+
+Once an altcoin symbol has been detected within a new message by the defined Regex expressions, the buy-sell process of the altcoin-BTC pair is initiated immediately.
+> <img src=".gitres/message-example.png">
+> Example: `WAN` is detected. Initiate buy-sell process of ticker `WANBTC`.
+
+
+A BUY order is placed, with price taking account of extreme slippage. Once it is filled, a SELL order will be placed at a price of configurable amount of percentage above the current price (ideally +100%, by default +20%).
