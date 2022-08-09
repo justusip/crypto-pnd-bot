@@ -24,10 +24,10 @@ concluded in a paper written by Jiahua Xu and Benjamin Livshits, The Anatomy of 
 DOI:10.2139/ssrn.3303365).
 
 > Set-up: The organizer creates a publicly accessible group or channel, and recruits as many group members or channel
-> sub- scribers as possible by advertising and posting invitation links on major forums such as Bitcointalk, Steemit, and
+> subscribers as possible by advertising and posting invitation links on major forums such as Bitcointalk, Steemit, and
 > Reddit.
 >
-> Telegram channels only allow subscribers to receive mes- sages from the channel admin, but not post discussions in the
+> Telegram channels only allow subscribers to receive messages from the channel admin, but not post discussions in the
 > channel. In a Telegram group, members can by default post messages, but this function is usually disabled by the group
 > admin to prohibit members’ interference. We use the terms channel and group interchangeably in this paper.
 >
@@ -44,7 +44,7 @@ DOI:10.2139/ssrn.3303365).
 > profits, to boost members’ confidence and encourage their participation.
 >
 > Pump: At the pre-arranged pump time, the admin announces the coin, typically in the format of an OCR (optical
-> character recognition)-proof image to hinder machine reading (Fig- ure 1). Immediately afterwards, the admin urges
+> character recognition)-proof image to hinder machine reading (Figure 1). Immediately afterwards, the admin urges
 > members to buy and hold the coin in order to inflate the coin price. During the first minute of the pump, the coin price
 > surges, sometimes increasing several fold.
 >
@@ -56,9 +56,9 @@ DOI:10.2139/ssrn.3303365).
 > dump, since most investors would rather hold the coin than sell at a loss.
 >
 > Post-pump review: Within half an hour, after the coin price and trading volume recover to approximately the pre-pump
-> levels, the admin posts a review on coin price change, typi- cally including only two price points — start price (or low
+> levels, the admin posts a review on coin price change, typically including only two price points — start price (or low
 > price) and peak price, and touts how much the coin price in-creased by the pump (Figure 1). Information such as trading
-> volume and timescale is only selectively revealed: if the vol- ume is high, and the pump-and-dump lasts a long time (
+> volume and timescale is only selectively revealed: if the volume is high, and the pump-and-dump lasts a long time (
 > over 10 minutes, say, would be considered “long”), then those stats will be “proudly” announced; if the volume is low or
 > the time between coin announcement and price peak is too short (which is often the case), then the information is
 > glossed over. Such posts give newcomers, who can access channel history, the illusion that pump-and-dumps are highly
@@ -75,7 +75,7 @@ coin and quickly sells it back after the price has been increased to a predefine
 
 Create a Discord account, a Binance account with API token and find the target Discord PND channel.
 
-Change the Regex expression which captures the altcoin ticker symbol at `discord_scraper.py`.
+Change the Regex expressions which captures the altcoin ticker symbol at `discord_scraper.py`.
 
 Create a `.env` file with the syntax defined as `.env.sample`.
 
@@ -92,3 +92,5 @@ Execute the following command to start listening to the Discord channel.
 ```shell
 python3 main.py
 ```
+
+Once a altcoin ticker symbol has been detected within a new message, by the defined Regex expressions, a BUY order will be placed. Then, a SELL order will be placed at a price of configurable amount of percentage above the current price (ideally +100%, by default +20%).
