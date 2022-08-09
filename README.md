@@ -1,6 +1,6 @@
 # Crypto Pump-and-Dump Bot
 
-Automatically scrapes Discord Crypto Pump and Dump channels and long/short the specified coined asap once announced
+Listens to Discord crypto pump-and-dump channels, buys the altcoin once announced and sells it immediately before the spike reaches its peak.
 
 ---
 
