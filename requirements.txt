@@ -1,0 +1,4 @@
+DateTime~=4.4
+aiohttp~=3.7.4.post0
+requests~=2.27.1
+selenium~=4.1.3
