@@ -33,17 +33,17 @@ concluded in a paper written by Jiahua Xu and Benjamin Livshits, [The Anatomy of
 > Pre-pump announcement: The group is ready to pump once it obtains enough members (typically above 1,000). The pump
 > organizer, who is now the group or channel admin, announces details of the next pump a few days ahead. The admins broad-
 > cast the exact time and date of the announcement of a coin which would then precipitate a pump of that coin. Other in-
-> formation disclosed in advance includes the exchange where the pump will take place and the pairing coin2. The admins
+> formation disclosed in advance includes the exchange where the pump will take place and the pairing coin. The admins
 > advise members to transfer sufficient funds (in the form of the pairing coin) into the named exchange beforehand.
 >
 > While the named pump time is approaching, the admin sends out countdowns, and repeats the pump “rules” such as: 1) buy
-> fast, 2) “shill”3 the pumped coin on the exchange chat box and social media to attract outsiders, 3) “HODL”4 the coin at
+> fast, 2) “shill” the pumped coin on the exchange chat box and social media to attract outsiders, 3) “HODL” the coin at
 > least for several minutes to give outsiders time to join in, 4) sell in pieces and not in a single chunk, 5) only sell
 > at a profit and never sell below the current price. The admin also gives members a pep talk, quoting historical pump
 > profits, to boost members’ confidence and encourage their participation.
 >
 > Pump: At the pre-arranged pump time, the admin announces the coin, typically in the format of an OCR (optical
-> character recognition)-proof image to hinder machine reading (Figure 1). Immediately afterwards, the admin urges
+> character recognition)-proof image to hinder machine reading. Immediately afterwards, the admin urges
 > members to buy and hold the coin in order to inflate the coin price. During the first minute of the pump, the coin price
 > surges, sometimes increasing several fold.
 >
@@ -56,7 +56,7 @@ concluded in a paper written by Jiahua Xu and Benjamin Livshits, [The Anatomy of
 >
 > Post-pump review: Within half an hour, after the coin price and trading volume recover to approximately the pre-pump
 > levels, the admin posts a review on coin price change, typically including only two price points — start price (or low
-> price) and peak price, and touts how much the coin price in-creased by the pump (Figure 1). Information such as trading
+> price) and peak price, and touts how much the coin price in-creased by the pump. Information such as trading
 > volume and timescale is only selectively revealed: if the volume is high, and the pump-and-dump lasts a long time (
 > over 10 minutes, say, would be considered “long”), then those stats will be “proudly” announced; if the volume is low or
 > the time between coin announcement and price peak is too short (which is often the case), then the information is
@@ -64,10 +64,11 @@ concluded in a paper written by Jiahua Xu and Benjamin Livshits, [The Anatomy of
 > profitable.
 
 In a nutshell, PND organizers create and advertise public online text channel/group on platforms such as Discord and
-Telegram. They announce a scheduled PND without but only reveal the coin to be PND-ed. After the announcement of the
-symbol the altcoin spikes to an average 150%-300%, then shortly returns to the original price or even lower.
+Telegram. They host regular pump-and-dump events in the channel/group. They only reveal the targeted altcoin after 
+the start of the event. After the announcement of the targeted altcoin, the price of it spikes to an average of +150%-300%, 
+then shortly returns to the original price or even lower.
 
-This program listens to Discord messages such that when it detects a coin symbol within the text, it instantly buys the
+This program listens to Discord messages such that when it detects an altcoin symbol within the text, it instantly buys the
 coin and quickly sells it back after the price has been increased to a predefined percentage (+20% by default.)
 
 ## Usage
