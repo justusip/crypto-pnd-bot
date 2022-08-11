@@ -90,12 +90,12 @@ BINANCE_API_SECRET=*****
 Execute the following command to start listening to the Discord channel.
 
 ```shell
-python3 main.py
+python3 src/main.py
 ```
 
 
 Once an altcoin symbol has been detected within a new message by the defined Regex expressions, the buy-sell process of the altcoin-BTC pair is initiated immediately.
-> <img src=".gitres/message-example.png">
+> <img src="docs/message-example.png">
 > Example: `WAN` is detected. Initiate buy-sell process of ticker `WANBTC`.
 
 
