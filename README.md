@@ -86,6 +86,8 @@ Once an altcoin symbol has been detected within a new message by the defined Reg
 > Example: `WAN` is detected. Initiate buy-sell process of ticker `WANBTC`.
 
 
+A BUY order is placed, with price taking account of extreme slippage. Once it is filled, a SELL order will be placed at a price of configurable amount of percentage above the current price (ideally +100%, by default +20%).
+
 ## Disclaimer
 
 This project is for informational purposes only. You should not construe any such information or other material as
@@ -96,6 +98,3 @@ securities laws of such jurisdiction.
 
 Under no circumstances will I be held responsible or liable in any way for any claims, damages, losses, expenses, costs,
 or liabilities whatsoever, including, without limitation, any direct or indirect damages for loss of profits.
-
-
-A BUY order is placed, with price taking account of extreme slippage. Once it is filled, a SELL order will be placed at a price of configurable amount of percentage above the current price (ideally +100%, by default +20%).
