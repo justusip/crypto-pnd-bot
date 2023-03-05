@@ -4,19 +4,6 @@ Listens to Discord crypto pump-and-dump channels, buys the altcoin once announce
 
 ---
 
-## Disclaimer
-
-This project is for informational purposes only. You should not construe any such information or other material as
-legal, tax, investment, financial, or other advice. Nothing contained here constitutes a solicitation, recommendation,
-endorsement, or offer by me or any third party service provider to buy or sell any securities or other financial
-instruments in this or in any other jurisdiction in which such solicitation or offer would be unlawful under the
-securities laws of such jurisdiction.
-
-If you plan to use real money, USE AT YOUR OWN RISK.
-
-Under no circumstances will I be held responsible or liable in any way for any claims, damages, losses, expenses, costs,
-or liabilities whatsoever, including, without limitation, any direct or indirect damages for loss of profits.
-
 ## Background
 
 There have been lots of crypto pump-and-dump (PND) schemes on lesser-known altcoins. How they work can typically be
@@ -97,6 +84,18 @@ python3 src/main.py
 Once an altcoin symbol has been detected within a new message by the defined Regex expressions, the buy-sell process of the altcoin-BTC pair is initiated immediately.
 > <img src="docs/message-example.png">
 > Example: `WAN` is detected. Initiate buy-sell process of ticker `WANBTC`.
+
+
+## Disclaimer
+
+This project is for informational purposes only. You should not construe any such information or other material as
+legal, tax, investment, financial, or other advice. Nothing contained here constitutes a solicitation, recommendation,
+endorsement, or offer by me or any third party service provider to buy or sell any securities or other financial
+instruments in this or in any other jurisdiction in which such solicitation or offer would be unlawful under the
+securities laws of such jurisdiction.
+
+Under no circumstances will I be held responsible or liable in any way for any claims, damages, losses, expenses, costs,
+or liabilities whatsoever, including, without limitation, any direct or indirect damages for loss of profits.
 
 
 A BUY order is placed, with price taking account of extreme slippage. Once it is filled, a SELL order will be placed at a price of configurable amount of percentage above the current price (ideally +100%, by default +20%).
