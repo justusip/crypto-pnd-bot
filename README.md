@@ -2,8 +2,7 @@
 
 ## Background
 
-There have been lots of crypto pump-and-dump (PND) schemes on lesser-known altcoins. How they work can typically be
-concluded in a paper written by Jiahua Xu and Benjamin Livshits, [The Anatomy of a Cryptocurrency Pump-and-Dump Scheme](https://arxiv.org/abs/1811.10109) (DOI:10.2139/ssrn.3303365).
+There have been lots of crypto pump-and-dump (PND) schemes on lesser-known altcoins. A paper written by Jiahua Xu and Benjamin Livshits, [The Anatomy of a Cryptocurrency Pump-and-Dump Scheme](https://arxiv.org/abs/1811.10109) (DOI:10.2139/ssrn.3303365), has a great summary of how they work.
 
 > Set-up: The organizer creates a publicly accessible group or channel, and recruits as many group members or channel
 > subscribers as possible by advertising and posting invitation links on major forums such as Bitcointalk, Steemit, and
@@ -46,7 +45,7 @@ concluded in a paper written by Jiahua Xu and Benjamin Livshits, [The Anatomy of
 > glossed over. Such posts give newcomers, who can access channel history, the illusion that pump-and-dumps are highly
 > profitable.
 
-In a nutshell, PND organizers create and advertise public online text channel/group on platforms such as Discord and
+In summary, PND organizers create and advertise public online text channel/group on platforms such as Discord and
 Telegram. They host regular pump-and-dump events in the channel/group. They only reveal the targeted altcoin after 
 the start of the event. After the announcement of the targeted altcoin, the price of it spikes to an average of +150%-300%, 
 then shortly returns to the original price or even lower.
