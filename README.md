@@ -1,8 +1,4 @@
-# Crypto Pump-and-Dump Bot
-
-Listens to Discord crypto pump-and-dump channels, buys the altcoin once announced and sells it immediately before the spike reaches its peak.
-
----
+# crypto-pnd-bot
 
 ## Background
 
